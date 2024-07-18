@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+   <link rel="stylesheet" href="styles.css" />
+    </head>
+  
+  <body>
+    <h1 id="title">Survey Form</h1>
+    
+    <p id="description">Just Practicing !!!<p>
+      
+      <form id="survey-form">
+        
+        <fieldset>
+          <label id="name-label">Enter your name: <input id="name" type="text" required placeholder="name" ></label>
+          
+          <label id="email-label">Enter your email: <input id="email" type="email" required placeholder="email @ ...." ></label>
+          
+          <label id="number-label">Enter your age: <input id="number" type="number" min="0" max="120" required placeholder="AGE"></label>
+          </fieldset>
+        
+          <fieldset>
+        <legend>Are you a Boy or Girl ?</legend>
+        <label><input type="radio"class="inline" value="1"  name="gen" /> Boy</label>
+        <input type="radio" class="inline" value="2"  name="gen"checked /> Other</label>
+        <label><input type="radio" name="gen" value="3" class="inline" /> Girl</label>
+      </fieldset>
+        
+      <fieldset>
+          <label for="referrer"> What do you like to eat the most?
+          <select id="dropdown" name="referrer">
+            <option value="">junk food =>pizza,burgers</option>
+            <option value="1">on a diet !!</option>
+            <option value="2">everything</option>
+            <option value="3">veggies</option>
+            <option value="4">non-veggies</option>
+          </select>
+        </label>
+         </fieldset> 
+        
+        <fieldset>
+            <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+          </fieldset>
+        
+          <fieldset>
+        <label for="happy">
+        <input class="inline" id="happy" type="checkbox" required value="1"  name="happy" /> Are you happy? 
+      </label>
+        
+      <label for="happy">
+        <input class="inline" id="happy" type="checkbox" required value="2" name="sad" /> Are you sad? 
+      </label>
+          </fieldset>
+        
+      <input id="submit" type="submit" value="Submit" />
+        
+        </form>
+  </body>
+</html>
